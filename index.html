@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/caseStudy.css">
+
+</head>
+<body>
+<div class="container">
+    <table name="scoreLevelName">
+        <tr>
+            <td id="score">Score : <label for="score_input"></label><input type="text" value="0" id="score_input"></td>
+            <td id="level">Level : <label for="level_input"></label><input type="text" value="1" id="level_input"></td>
+            <td id="playerName">Player Name : <label for="playerName_input"></label><input type="text" value="Default Name" id="playerName_input"></td>
+        </tr>
+        <tr>
+            <td id="startBtnTd" colspan=3><input id="startBtn" type="button" value="Click Here to Start Game" onclick="startClick()"></td>
+        </tr>
+        <tr>
+            <td class="guidance" colspan=3>Use "Arrow Button" to control the Tank.</td>
+        </tr>
+        <tr>
+            <td class="guidance" colspan=3>Use "Num 0" to Fire.</td>
+        </tr>
+    </table>
+    <div id="canvas">
+        <canvas id="myCanvas" height="1500" width="1500">
+        </canvas>
+    </div>
+    <div class="scoreTable">
+        <table>
+            <thead>
+            <tr>
+                <td>No</td>
+                <td>Player Name</td>
+                <td>Score</td>
+            </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<img id="mainTankImage_up" src="img/mainTank_up.jpg" alt="mainTankImage"/>
+<img id="mainTankImage_down" src="img/mainTank_down.jpg" alt="mainTankImage"/>
+<img id="mainTankImage_right" src="img/mainTank_right.jpg" alt="mainTankImage"/>
+<img id="mainTankImage_left" src="img/mainTank_left.jpg" alt="mainTankImage"/>
+
+<img id="enemy_left" class="enemy" src="img/enemy_left.jpg" alt="enemy_left"/>
+<img id="enemy_up" class="enemy" src="img/enemy_up.jpg" alt="enemy_up"/>
+<img id="enemy_right" class="enemy" src="img/enemy_right.jpg" alt="enemy_right"/>
+<img id="enemy_down" class="enemy" src="img/enemy_down.jpg" alt="enemy_down"/>
+
+<img id="background" src="img/background.jpg" alt="background"/>
+<img id="explosion" src="img/explosion.png" alt="explosion"/>
+<img id="trees" src="img/trees.png" alt="trees"/>
+
+<script src="js/localStorage.js"></script>
+<script src="js/const + link.js"></script>
+<script src="js/tree.js"></script>
+<script src="js/init.js"></script>
+<script src="js/bullet.js"></script>
+<script src="js/enemy.js"></script>
+<script src="js/mainTank.js"></script>
+<script src="js/gameBoard.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

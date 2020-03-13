@@ -1,0 +1,80 @@
+.container {
+    height: 1500px;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+canvas {
+    border: darkgoldenrod 15px solid;
+}
+
+#mainTankImage_up, #mainTankImage_down, #mainTankImage_left, #mainTankImage_right, #startGameBtn,
+#background, #explosion, #trees, #enemy_down, #enemy_left, #enemy_left, #enemy_right {
+    display: none;
+}
+
+.enemy {
+    display: none;
+}
+
+table {
+    border: 1px black solid;
+    width: 800px;
+}
+
+td {
+    font-size: 50px;
+    border: 1px black solid;
+    text-align: center;
+    padding: 10px;
+    background-color: darkgoldenrod;
+    font-weight: bold;
+}
+
+#playerName_input {
+    font-size: 45px;
+}
+
+table[name='scoreLevelName'] {
+    width: 1530px;
+    background-color: white;
+    margin-bottom: 20px;
+    border: white;
+    border-collapse: collapse;
+}
+
+td[id='score'], td[id='level'], td[id='playerName'] {
+    width: 500px;
+    background-color: white;
+    font-size: 50px;
+    line-height: 80px;
+}
+
+#score_input, #level_input, #playerName_input {
+    font-size: 50px;
+    width: 400px;
+    text-align: center;
+    font-family: times new roman, serif;
+    line-height: 80px;
+}
+
+#score_input, #level_input {
+    border: white;
+}
+
+input[id='startBtn'] {
+    font-size: 70px;
+    line-height: 80px;
+    width: 800px;
+    margin: 30px;
+}
+
+td[id="startBtnTd"]{
+    background-color: white;
+    border: white;
+}
+
+td[class="guidance"]{
+    background-color: white;
+    border: white 1px solid;
+}
