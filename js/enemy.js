@@ -70,7 +70,6 @@ let Enemy = function (img_enemy, left, top, direction) {
                 this.bullet_array_enemy.splice(i, 1);
                 isGameOver = true;
                 playerName = document.getElementById('playerName_input').value;
-                console.log(playerName);
                 alert('GAME OVER');
                 addScore();
                 setTable();

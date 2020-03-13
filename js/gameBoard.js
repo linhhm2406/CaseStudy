@@ -12,7 +12,7 @@ let GameBoard = function () {
 
         function move(evt) {
             switch (evt.keyCode) {
-                case NUM_0 :
+                case CTRL_BUTTON :
                     self.player.isShoot = true;
                     break;
                 case ARROW_LEFT :
@@ -130,6 +130,8 @@ let GameBoard = function () {
     this.checkWin = function () {
         if (this.score === 12) {
             alert('Win');
+            addScore();
+            setTable();
             isGameOver = true;
         }
     }
